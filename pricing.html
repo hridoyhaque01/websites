@@ -1,274 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Home | Corlate</title>
-
-    <!-- core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/prettyPhoto.css" rel="stylesheet">
-    <link href="css/owl.carousel.min.css" rel="stylesheet">
-    <link href="css/icomoon.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="Assets/css/slick-theme.css">
+  <link rel="stylesheet" href="Assets/css/slick.css">
+  <link rel="stylesheet" href="Assets/css/uikit.min.css">
+  <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Assets/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" integrity="sha512-X/RSQYxFb/tvuz6aNRTfKXDnQzmnzoawgEQ4X8nZNftzs8KFFH23p/BA6D2k0QCM4R0sY1DEy9MIY9b3fwi+bg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" integrity="sha512-f28cvdA4Bq3dC9X9wNmSx21rjWI+5piIW/uoc2LuQ67asKxfQjUow2MkcCNcfJiaLrHcGbed1wzYe3dlY4w9gA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="Assets/css/style.css">
 </head>
-<!--/head-->
-
-
 <body>
+  <!-- navbar -->
+  <nav class="navbar navbar-dark bg-dark navbar-expand-md ">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="Assets/images/logo.png" alt="">
+      </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarToggle">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggle">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item "><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item "><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item "><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item "><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li class="nav-item dropdown active">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+            <ul class="dropdown-menu">
+              <li><a href="singleB.html" class="dropdown-item ">Blog Single</a></li>
+              <li class="active"><a href="pricing.html" class="dropdown-item">Pricing</a></li>
+              <li><a href="404.html" class="dropdown-item">404</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
 
-    <header id="header">
-        <div class="top-bar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-xs-12">
-                        <div class="top-number">
-                            <p><i class="fa fa-phone-square"></i> +0123 456 70 90</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-xs-12">
-                        <div class="social">
-                            <ul class="social-share">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                            </ul>
-                            <div class="search">
-                                <form role="form">
-                                    <input type="text" class="search-form" autocomplete="off" placeholder="Search">
-                                    <i class="fa fa-search"></i>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--/.container-->
-        </div>
-        <!--/.top-bar-->
-        <nav class="navbar navbar-inverse" role="banner">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
-                </div>
-                
-                <div class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li class="dropdown active">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="blog-item.html">Blog Single</a></li>
-                                <li class="active"><a href="pricing.html">Pricing</a></li>
-                                <li><a href="404.html">404</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="blog.html">Blog</a></li> 
-                        <li><a href="contact-us.html">Contact</a></li>                        
-                    </ul>
-                </div>
-            </div><!--/.container-->
-        </nav><!--/nav-->
-        
-    </header><!--/header-->
+      </div>
 
-
-    <div class="page-title" style="background-image: url(images/page-title.png)">
-        <h1>Pricing</h1>
     </div>
-    
-    <section class="pricing">
-        <div class="large-title text-center">        
-            <h2>Pricing Table</h2>
-            <p>All users on MySpace will know that there are millions of people out there. Every day <br> besides so many people joining this community.</p>
-        </div> 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1 text-center">
-                    <div class="single-pricing">
-                        <span>Start Up</span>
-                        <h1>
-                            <span>$</span>
-                            19
-                            <span>/mo</span>
-                        </h1>
-                        <div class="clearfix">
-                            <ul>
-                                <li><i class="fa fa-pie-chart"></i> 5 Gb Disk Space</li>
-                                <li><i class="fa fa-paper-plane"></i> 1GB Dadicated Ram</li>
-                            </ul>
-                        </div>
-                        <a href="#">BUY</a>
-                    </div>
-                    <div class="single-pricing featured">
-                        <span>Standard</span>
-                        <h1>
-                            <span>$</span>
-                            49
-                            <span>/mo</span>
-                        </h1>
-                        <div class="clearfix">
-                            <ul>
-                                <li><i class="fa fa-pie-chart"></i> 5 Gb Disk Space</li>
-                                <li><i class="fa fa-paper-plane"></i> 1GB Dadicated Ram</li>
-                                <li><i class="fa fa-cloud"></i> 1GB Dadicated Ram</li>
-                            </ul>
-                        </div>
-                        <a href="#">BUY</a>
-                    </div>
-                    <div class="single-pricing">
-                        <span>Premium</span>
-                        <h1>
-                            <span>$</span>
-                            99
-                            <span>/mo</span>
-                        </h1>
-                        <div class="clearfix">
-                            <ul>
-                                <li><i class="fa fa-pie-chart"></i> 5 Gb Disk Space</li>
-                                <li><i class="fa fa-paper-plane"></i> 1GB Dadicated Ram</li>
-                            </ul>
-                        </div>
-                        <a href="#">BUY</a>
-                    </div>
-                </div>
-            </div>
+  </nav>
+  <div class="blog py-5 bg-danger text-center text-light">
+    <div class="container">
+      <h4>Our Pricing</h4>
+    </div>
+  </div>
+
+  <section class="for-common py-5" id="pricing">
+    <div class="container">
+      <div class="row text-center mb-5">
+        <div class="col-12">
+          <h2>Pricing Table</h2>
+          <p>All users on MySpace will know that there are millions of people out there. Every day <br> besides so many people joining this community.</p>
         </div>
-    </section>
-
-    <section id="bottom">
-        <div class="container fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-            <div class="row">
-                <div class="col-md-2">
-                    <a href="#" class="footer-logo">
-                        <img src="images/logo-black.png" alt="logo">
-                    </a>
+      </div>
+      <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4 mt-3">
+              <div class="single_pricing">
+                <div class="pricing_features">
+                  <h6>START UP</h6>
+                  <h1><span>$</span>19<span>/mo</span></h1>
+                  <ul class="mt-3">
+                    <li> 1 TB Disk Space</li>
+                    <li> 4GB Dadicated Ram</li>
+                    <li class="line"> 4GB Dadicated Ram</li>
+                    <li class="line">1GB Graphic Card</li>
+                    <li class="line">556GB SSD</li>
+                  </ul>
+                  <div class="text-center mt-5">
+                    <button class="btn">BUY</button>
+                  </div>
                 </div>
-                <div class="col-md-10">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="widget">
-                                <h3>Company</h3>
-                                <ul>
-                                    <li><a href="#">About us</a></li>
-                                    <li><a href="#">We are hiring</a></li>
-                                    <li><a href="#">Meet the team</a></li>
-                                    <li><a href="#">Copyright</a></li>
-                                    <li><a href="#">Terms of use</a></li>
-                                    <li><a href="#">Privacy policy</a></li>
-                                    <li><a href="#">Contact us</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!--/.col-md-3-->
+              </div>
+              </div>
+            <div class="col-md-6 col-lg-4 mt-3">
+              <div class="single_pricing ">
+                <div class="pricing_features">
+                  <h6>STANDARD</h6>
+                  <h1><span>$</span>49<span>/mo</span></h1>
+                  <ul class="mt-3">
+                    <li> 1 TB Disk Space</li>
+                    <li> 4GB Dadicated Ram</li>
+                    <li class="line"> 4GB Dadicated Ram</li>
+                    <li class="line">1GB Graphic Card</li>
+                    <li>556GB SSD</li>
+                  </ul>
+                  <div class="text-center mt-5">
+                    <button class="btn">BUY</button>
+                  </div>
 
-                        <div class="col-md-3 col-sm-6">
-                            <div class="widget">
-                                <h3>Support</h3>
-                                <ul>
-                                    <li><a href="#">Faq</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Forum</a></li>
-                                    <li><a href="#">Documentation</a></li>
-                                    <li><a href="#">Refund policy</a></li>
-                                    <li><a href="#">Ticket system</a></li>
-                                    <li><a href="#">Billing system</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!--/.col-md-3-->
-
-                        <div class="col-md-3 col-sm-6">
-                            <div class="widget">
-                                <h3>Developers</h3>
-                                <ul>
-                                    <li><a href="#">Web Development</a></li>
-                                    <li><a href="#">SEO Marketing</a></li>
-                                    <li><a href="#">Theme</a></li>
-                                    <li><a href="#">Development</a></li>
-                                    <li><a href="#">Email Marketing</a></li>
-                                    <li><a href="#">Plugin Development</a></li>
-                                    <li><a href="#">Article Writing</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!--/.col-md-3-->
-
-                        <div class="col-md-3 col-sm-6">
-                            <div class="widget">
-                                <h3>Our Partners</h3>
-                                <ul>
-                                    <li><a href="#">Adipisicing Elit</a></li>
-                                    <li><a href="#">Eiusmod</a></li>
-                                    <li><a href="#">Tempor</a></li>
-                                    <li><a href="#">Veniam</a></li>
-                                    <li><a href="#">Exercitation</a></li>
-                                    <li><a href="#">Ullamco</a></li>
-                                    <li><a href="#">Laboris</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!--/.col-md-3-->
-                    </div>
                 </div>
+              </div>
+              </div>
+            <div class="col-md-6 col-lg-4 mt-3">
+              <div class="single_pricing av">
+                <div class="pricing_features">
+                  <h6>PREMIUM</h6>
+                  <h1><span>$</span>99<span>/mo</span></h1>
+                  <ul class="mt-3">
+                    <li> 1 TB Disk Space</li>
+                    <li> 4GB Dadicated Ram</li>
+                    <li> 4GB Dadicated Ram</li>
+                    <li>1GB Graphic Card</li>
+                    <li>556GB SSD</li>
+                  </ul>
+                  <div class="text-center mt-5">
+                    <button class="btn">BUY</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+  </section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- footer menu -->
+  <section id="footer" class="py-5">
+    <div class="container">
+      <div class="row footer-content">
+        <div class="col-lg-2">
+          <img src="Assets/images/logo-black.png" alt="">
+        </div>
+        <div class="col-lg-10">
+          <div class="row">
+            <div class="col-md-6 col-lg-3">
+              <h6>Company</h6>
+              <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">We are hiring</a></li>
+                <li><a href="#">Meet the team</a></li>
+                <li><a href="#">Copyright</a></li>
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Contact us</a></li>
+
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <h6>SUPPORT</h6>
+              <ul>
+                <li><a href="#">Faq</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Forum</a></li>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Refund policy</a></li>
+                <li><a href="#">Ticket system</a></li>
+                <li><a href="#">Billing system</a></li>
+
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <h6>DEVELOPERS</h6>
+              <ul>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">SEO Marketing</a></li>
+                <li><a href="#">Theme</a></li>
+                <li><a href="#">Development</a></li>
+                <li><a href="#">Email Marketing</a></li>
+                <li><a href="#">Plugin Development</a></li>
+                <li><a href="#">Article Writing</a></li>
+
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <h6>OUR PARTNERS</h6>
+              <ul>
+                <li><a href="#">Adipisicing Elit</a></li>
+                <li><a href="#">Eiusmod</a></li>
+                <li><a href="#">Tempor</a></li>
+                <li><a href="#">Veniam</a></li>
+                <li><a href="#">Exercitation</a></li>
+                <li><a href="#">Ullamco</a></li>
+                <li><a href="#">Laboris</a></li>
+              </ul>
+            </div>
 
             </div>
+          </div>
+      </div>
+    </div>
+  </section>
+<!-- copyright section -->
+  <footer id="Copyright" class="py-5 bg-dark ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-left">
+          <p class="m-0 p-0">&copy; 2013 ShapeBootstrap. All Rights Reserved.</p>
         </div>
-    </section>
-    <!--/#bottom-->
-
-    <footer id="footer" class="midnight-blue">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    &copy; 2013 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>. All Rights Reserved.
-                </div>
-                <div class="col-sm-6">
-                    <ul class="pull-right">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Faq</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
+        <div class="col-md-6">
+          <ul class="d-flex float-md-right justify-content-center">
+            <li class="mr-3"><a href="#">Home</a></li>
+            <li class="mr-3"><a href="#">About Us</a></li>
+            <li class="mr-3"><a href="#">Faq</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
         </div>
-    </footer>
-    <!--/#footer-->
+      </div>
+    </div>
+  </footer>
+<button class="fixed"><i class="fal fa-arrow-up"></i></button>
+  <script src="Assets/js/jquery.min.js" charset="utf-8"></script>
+  <script src="Assets/js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="Assets/js/slick.min.js" charset="utf-8"></script>
+  <script src="Assets/js/uikit-icons.min.js" charset="utf-8"></script>
+  <script src="Assets/js/uikit.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js" integrity="sha512-9CWGXFSJ+/X0LWzSRCZFsOPhSfm6jbnL+Mpqo0o8Ke2SYr8rCTqb4/wGm+9n13HtDE1NQpAEOrMecDZw4FXQGg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
-
-</html>
+  <script src="Assets/js/custom.js" charset="utf-8"></script>
+  </body>
+  </html>
