@@ -1,0 +1,42 @@
+navbar ===>
+
+nav-link-color = #333333
+font-size : 20px
+
+hero ===>
+
+hero-title = linear-gradient(90.79deg, #0048FF 3.42%, #D6008D 82.66%);
+title-size : 46px;
+
+para : 16px
+
+
+about ====>
+
+about-bg = #EDF7FF
+about-title : 40px
+
+service ====>
+
+title-color: #002B9A
+title-size: #30px
+btn-color : #0048FF
+Non-bg = #FFF5FF
+software :  #F5F8FF
+
+
+
+section titles =====>
+title-size : 40px
+color:#0048FF;
+ 
+
+about ====>
+
+about-bg = #EDF7FF
+
+
+button  ===>
+
+backgound : linear-gradient(238.41deg, #09153F 1.24%, #002BC2 57.38%);
+font-size : 20px

@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.common-btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 20px;
+  border-radius: 100px;
+}
+
+.sec-pad {
+  padding: 60px 0;
+}
