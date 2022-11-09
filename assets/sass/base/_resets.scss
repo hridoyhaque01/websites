@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap");
 
+@import "mixin";
 *,
 ul {
   margin: 0;
@@ -8,7 +9,7 @@ ul {
 }
 
 body {
-  font-family: "Tajawal", sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
   font-size: 16px;
 }
 
@@ -19,17 +20,64 @@ a {
 p {
   padding: 0;
   margin: 0;
+  @include fontStyle(20px, 300, #303030, 37px);
+}
+
+.navbar-brand {
+  span {
+    @include fontStyle(32px, 700, #303030, 40px);
+  }
+}
+
+.row {
+  margin: 0;
 }
 
 .common-btn {
   display: inline-flex;
   align-items: center;
   column-gap: 10px;
-  padding: 10px 30px;
+  padding: 17px 43px;
   font-size: 20px;
   line-height: 23px;
-  border-radius: 100px;
+  border-radius: 66px;
+  text-transform: capitalize;
+  transition: 0.4s;
+
   cursor: pointer;
+  &.bg-btn {
+    color: #fff !important;
+    border: 0;
+    &.pink {
+      background-color: #f092cb;
+      &:hover {
+        box-shadow: 0 0 20px rgba(240, 146, 203, 0.6);
+      }
+    }
+    &.blue {
+      background-color: #a685e2;
+      &:hover {
+        box-shadow: 0 0 20px rgba(166, 133, 226, 0.6);
+      }
+    }
+  }
+
+  &.pink {
+    border: 1.9px solid #f092cb;
+    &:hover {
+      background-color: #f092cb;
+      color: #fff !important;
+      border-color: #f092cb !important;
+    }
+  }
+  &.blue {
+    border: 1.9px solid #a685e2;
+    &:hover {
+      background-color: #a685e2;
+      color: #fff !important;
+      border-color: #a685e2 !important;
+    }
+  }
 }
 
 .sec-pad {
@@ -37,10 +85,7 @@ p {
 }
 
 .section-title {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 46px;
-  color: #0048ff;
+  @include fontStyle(50px, 600, #303030, 120%);
 }
 
 .sub-title {
@@ -48,6 +93,11 @@ p {
   font-size: 30px;
   line-height: 34px;
   color: #002b9a;
+}
+
+.highlight {
+  color: #6155a6;
+  font-weight: 700;
 }
 
 .navbar-toggler {
@@ -60,14 +110,28 @@ p {
   box-shadow: none !important;
 }
 
+.link {
+  display: inline-block;
+  @include fontStyle(25px, 600, #6155a6, 117.1%);
+  margin: 15px 0 25px;
+  transition: 0.4s;
+  &:hover {
+    color: #a685e2;
+  }
+}
+
 @media only screen and (max-width: 991px) {
+  .navbar-brand {
+    span {
+      font-size: 24px;
+    }
+  }
   //hero content ======>
 
   .section-title {
-    font-size: 34px;
-    line-height: 40px;
+    font-size: 40px;
+    line-height: 48px;
   }
-
   .sub-title {
     font-size: 26px;
     line-height: 30px;
@@ -75,7 +139,12 @@ p {
 
   .common-btn {
     padding: 8px 30px;
-    font-size: 16px;
+    font-size: 18px;
+  }
+
+  .link {
+    font-size: 20px;
+    margin: 10px 0 15px;
   }
 }
 
@@ -83,8 +152,8 @@ p {
   //hero content ======>
 
   .section-title {
-    font-size: 26px;
-    line-height: 34px;
+    font-size: 34px;
+    line-height: 40px;
   }
 
   .sub-title {
@@ -95,9 +164,17 @@ p {
   .sec-pad {
     padding: 30px 0;
   }
+  .link {
+    font-size: 17px;
+    margin: 10px 0 15px;
+  }
 }
 
 @media only screen and (max-width: 575px) {
+  p {
+    font-size: 15px;
+    line-height: 24px;
+  }
   .section-title {
     font-size: 22px;
     line-height: 26px;
@@ -106,5 +183,15 @@ p {
   .sub-title {
     font-size: 18px;
     line-height: 24px;
+  }
+  .sec-pad {
+    padding: 20px 0;
+  }
+  .common-btn {
+    font-size: 15px;
+  }
+  .link {
+    font-size: 15px;
+    margin: 10px 0 15px;
   }
 }
