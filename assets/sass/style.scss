@@ -378,21 +378,7 @@ header {
   }
 }
 
-@media only screen and (max-width: 340px) {
-  //hero content ======>
-
-  #hero {
-    h1 {
-      font-size: 28px;
-      line-height: 34px;
-    }
-    p {
-      margin: 20px 0;
-    }
-  }
-
-  //about content ======>
-
+@media only screen and (max-width: 575px) {
   #about {
     .about-content {
       padding: 20px;
@@ -407,6 +393,22 @@ header {
       }
     }
   }
+}
+
+@media only screen and (max-width: 340px) {
+  //hero content ======>
+
+  #hero {
+    h1 {
+      font-size: 28px;
+      line-height: 34px;
+    }
+    p {
+      margin: 20px 0;
+    }
+  }
+
+  //about content ======>
 
   //service content ====>
   #service {
